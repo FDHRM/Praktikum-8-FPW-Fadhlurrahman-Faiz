@@ -21,7 +21,7 @@
             <label for="">Kategori Buku</label>
             <select name="kategori_buku_id" required>
                 <option value="">-- Pilih Kategori</option>
-                @foreach ($kategoriBuku as $kategori)
+                @foreach ($KategoriBuku as $kategori)
                     <option value="{{ $kategori->id }}">{{ $kategori->nama_kategori }}</option>
                 @endforeach
             </select>

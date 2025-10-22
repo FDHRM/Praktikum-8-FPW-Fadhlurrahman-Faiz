@@ -14,8 +14,8 @@ class BukuController extends Controller
     }
 
     public function create(){
-        $kategoriBuku = KategoriBuku::all();
-        return view('pages.tambah-buku', compact('kategoriBuku'));
+        $KategoriBuku = KategoriBuku::all();
+        return view('pages.tambah-buku', compact('KategoriBuku'));
     }
 
     public function store(Request $request)
@@ -33,8 +33,8 @@ class BukuController extends Controller
 
     public function edit($id) {
         $buku = Buku::find($id);
-        $kategoriBuku = KategoriBuku::all();
-        return view('pages.edit-buku', compact('buku', 'kategoriBuku'));
+        $KategoriBuku = KategoriBuku::all();
+        return view('pages.edit-buku', compact('buku', 'KategoriBuku'));
     }
 
     public function update(Request $request, $id) {
