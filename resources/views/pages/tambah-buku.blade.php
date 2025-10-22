@@ -21,7 +21,7 @@
             <select name="kategori_buku_id" id="kategori_buku_id" required>
                 <option value="">-- Pilih Kategori --</option>
 
-                @forelse($kategoriBuku as $kategori)
+                @forelse($KategoriBuku as $kategori)
                     <option value="{{ $kategori->id }}" {{ old('kategori_buku_id') == $kategori->id ? 'selected' : '' }}>
                         {{ $kategori->nama_kategori }}
                     </option>
